@@ -25,7 +25,7 @@ function Nav() {
 
 
         <Image
-          src='/Logo.svg'
+          src='/Logo.png'
           
           width={200}
           height={100}
@@ -33,7 +33,7 @@ function Nav() {
       </Link>
 
       <Link href='/'  className='lg:hidden' >
-        <Image src='/Logo.svg' width={100} height={100} />
+        <Image src='/Logo.png' width={100} height={100} />
       </Link>
      
       <div className="text-orange-400 md:hidden space-x-6 flex" >

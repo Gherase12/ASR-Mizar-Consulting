@@ -38,7 +38,7 @@ function portofoliu() {
   ];
 
   return (
-    <div className='bg-blue-1  px-10 md:px-40 xl:px-80 py-10  '>
+    <div className='bg-blue-1  px-10 md:px-40 xl:px-80 py-10 overflow-hidden  '>
       <h1 className='text-blue-900 text-4xl lg:text-6xl  max-w-sm font-bold   lg:max-w-xl xl:max-w-2xl'>
         Proiectele noastre
       </h1>
