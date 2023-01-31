@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="237.496" height="78.598" viewBox="0 0 237.496 78.598">
+  <g id="LogoAsrMizar" transform="translate(0 0.051)">
+    <line id="Line_1" data-name="Line 1" x2="237.496" transform="translate(0 75.392)" fill="none" stroke="#1e4a7e" stroke-miterlimit="10" stroke-width="6.31"/>
+    <g id="Group" transform="translate(18.275 17.703)">
+      <text id="ASR_MIZAR" data-name="ASR MIZAR" transform="translate(7.196 22)" fill="#1d4b7f" font-size="22" font-family="Braggadocio"><tspan x="0" y="0">ASR MIZAR</tspan></text>
+      <text id="CONSU" transform="translate(0 49.119)" fill="#1d4b7f" font-size="22" font-family="Braggadocio"><tspan x="0" y="0">CONSU</tspan></text>
+      <text id="L" transform="translate(100.286 49.119)" fill="#1d4b7f" font-size="22" font-family="Braggadocio" letter-spacing="-0.03em"><tspan x="0" y="0">L</tspan></text>
+      <text id="TING" transform="translate(121.065 49.119)" fill="#1d4b7f" font-size="22" font-family="Braggadocio"><tspan x="0" y="0">TING</tspan></text>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M165.3,316.87h74.67s16.066-16.772,35.048,0h74.213" transform="translate(-138.514 -306.69)" fill="none" stroke="#1e4a7e" stroke-miterlimit="10" stroke-width="5.45"/>
+  </g>
+</svg>
