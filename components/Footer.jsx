@@ -5,11 +5,11 @@ function Footer() {
 
     const contacte = [
         {
-            content:"07####",
+            content:"0742051084",
             Icon:AiFillPhone
         },
         {
-            content:"#####@yahoo.ro",
+            content:"asr.mizar@gmail.com",
             Icon:AiFillMail
         }
     ]

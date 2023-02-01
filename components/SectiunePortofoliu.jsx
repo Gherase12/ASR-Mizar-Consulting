@@ -8,12 +8,13 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Image from "next/image";
 
-function SectiunePortofoliu({ nume, numar, folder }) {
+function SectiunePortofoliu({ nume, numar, folder, subtitle }) {
   return (
     <div>
       <h2 className='text-blue-900 text-2xl font-bold  lg:text-4xl my-5 lg:my-10  '>
         {nume}
       </h2>
+      <h3 className="text-gray-400  text-md lg:text-xl font-bold mb-5 " >{subtitle}</h3>
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}

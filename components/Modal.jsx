@@ -5,11 +5,11 @@ import { AiFillPhone, AiFillMail } from 'react-icons/ai';
 
 function Modal({ closeModal, isModalOpen }) {
   const call = () => {
-    window.location.href = 'tel:078####';
+    window.location.href = 'tel:0742051084';
   };
 
     const sendEmail = () => {
-        window.location.href = 'mailto:example@example.com';
+        window.location.href = 'mailto:asr.mizar@gmail.com';
       };
 
   return (
@@ -46,7 +46,7 @@ function Modal({ closeModal, isModalOpen }) {
                     as='h3'
                     className='text-lg font-medium text-blue-900 leading-6 pr-10 '
                   >
-                    Telefon: 07####
+                    Telefon: 0742051084
                   </Dialog.Title>
                     <button onClick={call}  className="border-2 bg-blue-900 border-orange-400">
                     <AiFillPhone size={30} className="text-orange-400"   />
@@ -58,7 +58,7 @@ function Modal({ closeModal, isModalOpen }) {
                     as='h3'
                     className='text-lg font-medium text-blue-900 leading-6 pr-10 '
                   >
-                    Email: ####@yahoo.ro
+                    Email: asr.mizar@gmail.com
                   </Dialog.Title>
                     <button onClick={sendEmail}  className="border-2 bg-blue-900 border-orange-400">
                     <AiFillMail size={30} className="text-orange-400"  />
