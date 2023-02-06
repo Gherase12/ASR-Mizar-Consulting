@@ -8,10 +8,13 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Image from "next/image";
 import { tipuri } from './../data/tipuri';
+import { useLeanguage } from './../context/LeanguageContext';
 
 
 
 function CaruselMic({setSelected}) {
+
+    const {leanguage, setLanguage} = useLeanguage()
 
     const handleClick = (t) => {
         setSelected(t)
@@ -37,7 +40,7 @@ function CaruselMic({setSelected}) {
         modules={[Autoplay]}
         className='h-64 lg:h-80'
       >
-         {tipuri.map((t,i1)=>(
+         {tipuri[leanguage].map((t,i1)=>(
             [...Array(t.numar)].map((_, i2) => (
                 <SwiperSlide key={i2} className='  mb-20'>
                   <div onClick={()=> handleClick(t) } className="w-64 h-64 cursor-pointer" >

@@ -6,11 +6,13 @@ import { AiFillPhone } from 'react-icons/ai';
 import Link from "next/link";
 
 import ContactBtn from "./ContactBtn";
+import { useLeanguage } from './../context/LeanguageContext';
+import { texts } from './../data/texts';
 
 function Nav() {
   const items = ["Acasa", "Portofoliu"];
 
-
+   const {leanguage, setLeanguage} =  useLeanguage()
   const [open, setOpen] = useState(false);
  
   const call = () => {
@@ -19,7 +21,7 @@ function Nav() {
 
   return (
     <nav className='w-full top-0 fixed h-16 lg:h-20 shadow-md bg-blue-1 flex justify-between   items-center px-8 z-50 font-nunito font-bold lg:px-20   '>
-     
+        
 
       <Link  href='/'  className="hidden lg:flex my-7" >
 
@@ -35,6 +37,10 @@ function Nav() {
       <Link href='/'  className='lg:hidden' >
         <Image src='/Logo.png' width={100} height={100} />
       </Link>
+      <div className="flex space-x-2 cursor-pointer" >
+          <Image onClick={()=>setLeanguage("ro")} src={"/flags/ro.svg"} width={20} height={20}  />
+          <Image onClick={()=>setLeanguage("en")} src={"/flags/gb.svg"} width={20} height={20}  />
+        </div>
      
       <div className="text-orange-400 md:hidden space-x-6 flex" >
         <AiFillPhone 
@@ -75,8 +81,8 @@ function Nav() {
 
       <div className='hidden  md:flex  space-x-5 items-center lg:text-lg lg:pr-7  '>
         <ul className='md:flex hidden space-x-5'>
-          {items.map((item, i) => (
-            <Link key={i} href={i == 0 ? "/" : item.toLowerCase()}>
+          {texts[leanguage].navText.map((item, i) => (
+            <Link key={i} href={i == 0 ? "/" : "/portofoliu"}>
               <li className='text-blue-900 hover:text-orange-400 '>{item}</li>
             </Link>
           ))}

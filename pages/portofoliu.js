@@ -4,16 +4,12 @@ import CaruselMare from './../components/CaruselMare';
 
 import CaruselMic from './../components/CaruselMic';
 import { tipuri } from './../data/tipuri';
+import { useLeanguage } from './../context/LeanguageContext';
 
 function Portofoliu() {
+  const {leanguage, setLanguage} = useLeanguage()
   const [selected, setSelected] = useState(
-    {
-      nume: "Global Service Rampalace Imobiliare",
-      subtitle:
-        "Proiectare, consultanta, compartimentare interioara, finisaje interioare, finisaje exterioare",
-      numar: 5,
-      folder: "serv-ramp",
-    }
+    tipuri[leanguage][0]
   );
 
   
@@ -26,7 +22,7 @@ function Portofoliu() {
      
       <div className=' w-full 2xl:max-w-[1400px] 2xl:h-[500px] flex flex-col-reverse 2xl:flex-row'>
         <ul className='h-full 2xl:w-[300px] flex flex-col '>
-          {tipuri.map((t, i) => (
+          {tipuri[leanguage].map((t, i) => (
             <li
             key={i}
               onClick={() => setSelected(t)}

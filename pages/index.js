@@ -1,8 +1,13 @@
 import Hero from "@/components/Hero";
 import Head from "next/head";
 import Image from "next/image";
+import { texts } from './../data/texts';
+import { useLeanguage } from './../context/LeanguageContext';
 
 export default function Home() {
+
+  const {leanguage, setLanguage} = useLeanguage()
+
   return (
     <div className="overfolw-hidden ">
       <Head>
@@ -12,27 +17,19 @@ export default function Home() {
         <link rel='icon' href='/Logo.svg' />
       </Head>
       <main>
-        <Hero />
+        <Hero  title={texts[leanguage].heroTitle}  />
 
         <div className='px-10 bg-blue-1 lg:pb-20 md:px-40 xl:px-80 pt-14 flex flex-col lg:flex-row '>
           <div className="lg:max-w-2xl  lg:p-10" >
           <h2 className='text-blue-900  text-xl font-black lg:text-2xl  max-w-[250px] lg:max-w-2xl '>
-            Despre ASR Mizar Consulting -
+            {texts[leanguage].despreTitle}
           </h2>
           <h3 className='text-gray-400  text-md font-bold mt-5    max-w-[250px]'>
-            Expertiza si calitate in construirea proiectelor tale
+          {texts[leanguage].despreSubTitle}
           </h3>
 
           <p  className="mt-5 text-gray-800 font-medium  max-h-60 lg:max-h-full lg:overflow-hidden  overflow-scroll scrollbar-hide"> 
-            ASR Mizar Consulting este o firma cu o solida reputatie in domeniul
-            constructiilor, cu peste 6 ani de experienta in oferirea de servicii
-            premium clientilor nostri. Ne mandrim cu un portofoliu impresionant
-            de proiecte realizate cu succes si clienti multumiti de calitatea si
-            atentia acordate fiecarei lucrari. <br/><br/>
-            Ne angajam sa fim partenerul
-            dumneavoastra de incredere in crearea si realizarea proiectelor
-            dumneavoastra, asistandu-va in fiecare etapa a procesului, de la
-            intocmirea documentatiei si bugetelor, pana la executia lucrarii.
+          {texts[leanguage].despreParagraf}
           </p>
           </div>
           <div  className="mt-10 lg:mt-0   flex lg:space-x-8  ">
