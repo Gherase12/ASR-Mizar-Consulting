@@ -5,6 +5,7 @@ import CaruselMare from './../components/CaruselMare';
 import CaruselMic from './../components/CaruselMic';
 import { tipuri } from './../data/tipuri';
 import { useLeanguage } from './../context/LeanguageContext';
+import { texts } from './../data/texts';
 
 function Portofoliu() {
   const {leanguage, setLanguage} = useLeanguage()
@@ -17,7 +18,7 @@ function Portofoliu() {
   return (
     <div className='bg-blue-1  px-10 md:px-40 xl:px-80 py-10  overflow-x-hidden '>
       <h1 className='text-blue-900 text-4xl lg:text-6xl  max-w-sm font-bold  mb-10  lg:max-w-xl xl:max-w-2xl'>
-        Proiectele noastre
+        {texts[leanguage].portofolioTitle}
       </h1>
      
       <div className=' w-full 2xl:max-w-[1400px] 2xl:h-[500px] flex flex-col-reverse 2xl:flex-row'>
