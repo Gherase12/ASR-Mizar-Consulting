@@ -5,7 +5,7 @@ import CaruselMare from './../components/CaruselMare';
 import CaruselMic from './../components/CaruselMic';
 import { tipuri } from './../data/tipuri';
 
-function portofoliu() {
+function Portofoliu() {
   const [selected, setSelected] = useState(
     {
       nume: "Global Service Rampalace Imobiliare",
@@ -13,7 +13,7 @@ function portofoliu() {
         "Proiectare, consultanta, compartimentare interioara, finisaje interioare, finisaje exterioare",
       numar: 5,
       folder: "serv-ramp",
-    },
+    }
   );
 
   
@@ -28,6 +28,7 @@ function portofoliu() {
         <ul className='h-full 2xl:w-[300px] flex flex-col '>
           {tipuri.map((t, i) => (
             <li
+            key={i}
               onClick={() => setSelected(t)}
               className={`flex-1 border-b-2 flex items-center justify-start pl-6 lg:pl-10 ${
                 t.nume == selected?.nume
@@ -47,4 +48,4 @@ function portofoliu() {
   );
 }
 
-export default portofoliu;
+export default Portofoliu;
