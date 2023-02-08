@@ -7,10 +7,20 @@
     font-family: "Braggadocio";
     src: url("/fonts/braggadocio.ttf") format("ttf");
   }
+
+@font-face {
+    font-family: "Rockwell";
+    src: url("/fonts/rockb.ttf") format("ttf");
+  }
   
   
   .font-bragg{
     font-family: Braggadocio, sans-serif;
+    font-style: normal;
+  }
+  
+  .font-rock{
+    font-family: Rockwell, sans-serif;
     font-style: normal;
   }
   
