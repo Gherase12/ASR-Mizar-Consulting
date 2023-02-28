@@ -29,7 +29,7 @@ function Nav() {
         <Image
           src='/Logo.png'
           
-          width={200}
+          width={130}
           height={100}
         />
       </Link>
